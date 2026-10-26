@@ -24,7 +24,7 @@ serviceCards.forEach((card)=>{
 
 });
 
-cards.forEach((card)=>{
+serviceCards.forEach((card)=>{
 
     card.addEventListener("mousemove",(e)=>{
 

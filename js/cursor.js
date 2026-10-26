@@ -1,9 +1,13 @@
 const cursor=document.querySelector(".cursor");
 
-document.addEventListener("mousemove",(e)=>{
+if (cursor && window.matchMedia("(hover:hover) and (pointer:fine)").matches) {
 
-cursor.style.left=e.clientX+"px";
+    document.addEventListener("mousemove",(e)=>{
 
-cursor.style.top=e.clientY+"px";
+        cursor.style.left=e.clientX+"px";
 
-});
+        cursor.style.top=e.clientY+"px";
+
+    });
+
+}
