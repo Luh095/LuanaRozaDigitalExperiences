@@ -14,17 +14,17 @@
     <meta name="author" content="Luana Roza">
 
     <link rel="icon" href="assets/favicon.png" type="image/png">
-    <link rel="canonical" href="https://luh095.github.io/Luana-Roza---Digital-Experiences/">
+    <link rel="canonical" href="https://SEUDOMINIO.com.br/">
 
     <!-- Compartilhamento -->
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:url" content="https://luh095.github.io/Luana-Roza---Digital-Experiences/">
+    <meta property="og:url" content="https://SEUDOMINIO.com.br/">
     <meta property="og:title" content="Luana Roza | Desenvolvedora Web">
     <meta property="og:description"
         content="Sites e sistemas web para empresas e profissionais. Front-end em JavaScript, back-end em PHP e MySQL.">
-    <meta property="og:image" content="https://luh095.github.io/Luana-Roza---Digital-Experiences/assets/og-cover.png">
+    <meta property="og:image" content="https://SEUDOMINIO.com.br/assets/og-cover.png">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Google Fonts -->
@@ -122,7 +122,7 @@
 
         </div>
 
-        <nav>
+        <nav id="mainNav">
 
             <ul>
 
@@ -144,11 +144,27 @@
 
         </nav>
 
-        <button id="themeBtn">
+        <div class="nav-actions">
 
-            ☾
+            <button id="themeBtn" type="button" aria-label="Alternar tema">
 
-        </button>
+                ☾
+
+            </button>
+
+            <button
+                id="menuBtn"
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="mainNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+
+        </div>
 
     </header>
 
@@ -1093,7 +1109,7 @@
                 <div class="project-links">
 
                     <a
-                        href="https://github.com/Luh095/Luana-Roza---Digital-Experiences"
+                        href="#"
                         class="project-link secondary"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -2259,6 +2275,7 @@
     <script src="js/experience.js"></script>
     <script src="js/contact.js?v=2"></script>
     <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
 
 </body>
 
