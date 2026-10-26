@@ -19,3 +19,16 @@
     transition:.15s;
 
 }
+
+/* Em telas de toque não existe ponteiro: o ponto e o brilho
+   ficariam parados no canto superior esquerdo da tela */
+
+@media (hover:none), (pointer:coarse), (max-width:1024px){
+
+    .cursor{
+
+        display:none;
+
+    }
+
+}

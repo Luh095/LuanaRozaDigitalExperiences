@@ -21,3 +21,13 @@
     z-index:-2;
 
 }
+
+@media (hover:none), (pointer:coarse), (max-width:1024px){
+
+    #spotlight{
+
+        display:none;
+
+    }
+
+}
