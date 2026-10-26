@@ -1,0 +1,93 @@
+/* =====================================================
+   AURORA
+=====================================================*/
+
+@keyframes auroraMove{
+
+    0%{
+
+        transform:
+        translate(0,0)
+        scale(1);
+
+    }
+
+    25%{
+
+        transform:
+        translate(80px,-60px)
+        scale(1.15);
+
+    }
+
+    50%{
+
+        transform:
+        translate(-60px,70px)
+        scale(.9);
+
+    }
+
+    75%{
+
+        transform:
+        translate(100px,20px)
+        scale(1.08);
+
+    }
+
+    100%{
+
+        transform:
+        translate(0,0)
+        scale(1);
+
+    }
+
+}
+
+/* =====================================================
+   GLOW
+=====================================================*/
+
+@keyframes pulseGlow{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:.35;
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+        opacity:.6;
+
+    }
+
+}
+
+@keyframes floatCard{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}

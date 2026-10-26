@@ -1,0 +1,21 @@
+.cursor{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    position:fixed;
+
+    background:#57D7FF;
+
+    pointer-events:none;
+
+    z-index:999999;
+
+    transform:translate(-50%,-50%);
+
+    transition:.15s;
+
+}

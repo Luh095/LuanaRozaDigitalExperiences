@@ -1,0 +1,276 @@
+/* ===================================================
+   NAVBAR
+=================================================== */
+
+#header{
+
+    position:fixed;
+
+    top:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:min(1320px,94%);
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    z-index:999;
+
+    transition:.45s ease;
+
+}
+
+/* Estado após scroll */
+
+#header.scrolled{
+
+    margin-top:15px;
+
+    height:70px;
+
+    background:rgba(10,15,30,.55);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:22px;
+
+    box-shadow:
+
+    0 12px 40px rgba(0,0,0,.25);
+
+}
+
+/* ===================================================
+   LOGO
+=================================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo h2{
+
+    font-family:var(--title);
+
+    font-size:1.5rem;
+
+    letter-spacing:5px;
+
+    font-weight:700;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.logo span{
+
+    display:block;
+
+    color:var(--secondary);
+
+    letter-spacing:7px;
+
+    margin-top:4px;
+
+}
+
+.logo:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ===================================================
+   MENU
+=================================================== */
+
+nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:38px;
+
+}
+
+nav a{
+
+    position:relative;
+
+    color:var(--text-light);
+
+    font-size:.96rem;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+nav a:hover{
+
+    color:white;
+
+}
+
+/* Linha animada */
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-8px;
+
+    transform:translateX(-50%);
+
+    width:0;
+
+    height:2px;
+
+    background:linear-gradient(90deg,
+    var(--primary),
+    var(--secondary));
+
+    transition:.35s;
+
+    border-radius:20px;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* ===================================================
+   BOTÃO TEMA
+=================================================== */
+
+#themeBtn{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1rem;
+
+    color:white;
+
+    transition:.35s;
+
+}
+
+#themeBtn:hover{
+
+    transform:rotate(18deg);
+
+    background:rgba(255,255,255,.08);
+
+    box-shadow:
+
+    0 0 25px rgba(124,92,255,.35);
+
+}
+
+/* ===================================================
+   HOVER DA NAVBAR
+=================================================== */
+
+#header:hover{
+
+    transform:translateX(-50%) translateY(2px);
+
+}
+
+/* ===================================================
+   EFEITO GLASS
+=================================================== */
+
+#header::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:inherit;
+
+    background:
+
+    linear-gradient(
+
+        120deg,
+
+        rgba(255,255,255,.05),
+
+        rgba(255,255,255,.01)
+
+    );
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+#header.scrolled::before{
+
+    opacity:1;
+
+}
+
+/* ===================================================
+   SOCIAL FIXA (futuro)
+=================================================== */
+
+.nav-extra{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}

@@ -1,0 +1,860 @@
+/*==================================================
+ABOUT
+Luana Roza - Digital Experiences
+==================================================*/
+
+#about{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    padding:180px 8%;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(95,120,255,.12),
+        transparent 35%),
+
+        radial-gradient(circle at bottom right,
+        rgba(0,215,255,.10),
+        transparent 40%),
+
+        #050816;
+
+}
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+#about::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:900px;
+
+    height:900px;
+
+    left:-300px;
+
+    top:-250px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(circle,
+
+        rgba(90,110,255,.18),
+
+        transparent 70%);
+
+    filter:blur(120px);
+
+}
+
+#about::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    right:-250px;
+
+    bottom:-200px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(circle,
+
+        rgba(0,215,255,.12),
+
+        transparent 70%);
+
+    filter:blur(120px);
+
+}
+
+/*==================================================
+HEADER
+==================================================*/
+
+.about-header{
+
+    position:relative;
+
+    z-index:10;
+
+    width:100%;
+
+    max-width:850px;
+
+    margin:0 auto 120px;
+
+    text-align:center;
+
+}
+
+/* Tag Superior */
+.section-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 24px;
+
+    border-radius:40px;
+
+    background:
+
+        rgba(255,255,255,.05);
+
+    border:
+
+        1px solid rgba(255,255,255,.08);
+
+    color:#71DFFF;
+
+    font-size:.85rem;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    backdrop-filter:blur(15px);
+
+}
+
+/* Título */
+.about-header h2{
+
+    margin-top:35px;
+
+    color:white;
+
+    font-size:4rem;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-weight:700;
+
+    line-height:1.15;
+
+}
+
+/* Texto */
+.about-header p{
+
+    margin:35px auto 0;
+
+    max-width:700px;
+
+    color:#B7C5D8;
+
+    line-height:2;
+
+    font-size:1.08rem;
+
+}
+
+/* Pequena linha decorativa */
+.about-header::after{
+
+    content:"";
+
+    display:block;
+
+    width:120px;
+
+    height:3px;
+
+    margin:45px auto 0;
+
+    border-radius:30px;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            #5F7CFF,
+
+            #5FD7FF,
+
+            transparent
+
+        );
+
+}
+
+/*==================================================
+ANIMAÇÕES no Título
+==================================================*/
+
+.about-header{
+
+    animation:fadeTop 1.2s ease;
+
+}
+
+@keyframes fadeTop{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==================================================
+TIMELINE
+==================================================*/
+
+.timeline{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:80px 0;
+
+}
+
+/* Linha Central */
+.timeline-line{
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    transform:translateX(-50%);
+
+    width:4px;
+
+    height:100%;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        to bottom,
+        rgba(95,124,255,.2),
+        #5F7CFF,
+        #5FD7FF,
+        rgba(95,215,255,.2)
+    );
+
+    box-shadow:
+        0 0 30px rgba(95,124,255,.35),
+        0 0 60px rgba(95,215,255,.20);
+
+}
+
+/* Cada Etapa */
+.timeline-item{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    width:100%;
+
+    margin:80px 0;
+
+}
+
+/* Alternância Automática */
+.timeline-item:nth-child(even){
+
+    justify-content:flex-end;
+
+}
+
+.timeline-item:nth-child(odd){
+
+    justify-content:flex-start;
+
+}
+
+/* Ponto Luminoso */
+.timeline-dot{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    width:24px;
+
+    height:24px;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:#5FD7FF;
+
+    border:4px solid #050816;
+
+    box-shadow:
+        0 0 20px #5FD7FF,
+        0 0 50px rgba(95,215,255,.55);
+
+    z-index:20;
+
+    animation:dotPulse 3s infinite;
+
+}
+
+/* Card Glass */
+.timeline-card{
+
+    width:42%;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.45s;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.28);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Reflexo */
+.timeline-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    top:0;
+
+    width:70%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.14),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    transition:1s;
+
+}
+
+.timeline-card:hover::before{
+
+    left:180%;
+
+}
+
+/* Hover */
+.timeline-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(95,215,255,.25);
+
+    box-shadow:
+
+        0 35px 70px rgba(0,0,0,.35),
+
+        0 0 45px rgba(95,215,255,.18);
+
+}
+
+/* Ano */
+.timeline-card span{
+
+    color:#5FD7FF;
+
+    font-size:.9rem;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+/* Título h3 */
+.timeline-card h3{
+
+    margin:15px 0;
+
+    color:#fff;
+
+    font-size:1.8rem;
+
+    font-family:"Space Grotesk",sans-serif;
+
+}
+
+/* Texto timeline */
+.timeline-card p{
+
+    color:#B7C5D8;
+
+    line-height:1.9;
+
+}
+
+/* Pequena Barra Luminosa */
+.timeline-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #5F7CFF,
+        #5FD7FF,
+        transparent
+    );
+
+}
+
+/* Animação do Ponto */
+@keyframes dotPulse{
+
+    0%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,-50%) scale(1.25);
+
+    }
+
+    100%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+    }
+
+}
+
+/* Responsividade da Timeline */
+@media(max-width:900px){
+
+.timeline-line{
+
+    left:22px;
+
+}
+
+.timeline-dot{
+
+    left:22px;
+
+}
+
+.timeline-item{
+
+    justify-content:flex-end !important;
+
+    padding-left:60px;
+
+}
+
+.timeline-card{
+
+    width:100%;
+
+}
+
+}
+
+/*==================================================
+ESTATÍSTICAS
+==================================================*/
+
+.about-stats{
+
+    margin-top:140px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.stat-card{
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+        0 25px 60px rgba(95,215,255,.15);
+
+}
+
+.stat-card h3{
+
+    font-size:3rem;
+
+    color:#5FD7FF;
+
+    font-family:"Space Grotesk",sans-serif;
+
+}
+
+.stat-card p{
+
+    margin-top:15px;
+
+    color:#C6D3E1;
+
+}
+
+/*==================================================
+FEATURES
+==================================================*/
+
+.about-features{
+
+    margin-top:120px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    padding:45px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+    transition:.45s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#5FD7FF;
+
+}
+
+.feature-card i{
+
+    font-size:2.8rem;
+
+    color:#5FD7FF;
+
+    margin-bottom:25px;
+
+}
+
+.feature-card h3{
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#C8D4E3;
+
+    line-height:1.8;
+
+}
+
+/*==================================================
+PROFILE
+==================================================*/
+
+.about-profile{
+
+    margin-top:160px;
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.profile-photo{
+
+    position:relative;
+
+}
+
+.profile-photo img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+        0 35px 80px rgba(0,0,0,.35);
+
+}
+
+.profile-photo::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-25px;
+
+    border-radius:40px;
+
+    background:radial-gradient(circle,
+
+    rgba(95,215,255,.20),
+
+    transparent 70%);
+
+    filter:blur(70px);
+
+    z-index:-1;
+
+}
+
+.profile-content span{
+
+    color:#5FD7FF;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+}
+
+.profile-content h2{
+
+    margin:25px 0;
+
+    color:white;
+
+    font-size:3rem;
+
+    line-height:1.2;
+
+}
+
+.profile-content p{
+
+    color:#C7D3E1;
+
+    line-height:2;
+
+    margin-bottom:20px;
+
+}
+
+/*==================================================
+TECH STACK
+==================================================*/
+
+.tech-stack{
+
+    margin-top:120px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.tech-stack span{
+
+    padding:15px 28px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#D7E2EE;
+
+    transition:.35s;
+
+    cursor:default;
+
+}
+
+.tech-stack span:hover{
+
+    transform:translateY(-6px);
+
+    background:rgba(95,215,255,.12);
+
+    border-color:#5FD7FF;
+
+    color:white;
+
+}
+
+/*==================================================
+RESPONSIVO
+==================================================*/
+
+@media(max-width:992px){
+
+.about-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.about-features{
+
+grid-template-columns:1fr;
+
+}
+
+.about-profile{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.profile-photo{
+
+max-width:350px;
+
+margin:auto;
+
+}
+
+}
+
+@media(max-width:650px){
+
+.about-stats{
+
+grid-template-columns:1fr;
+
+}
+
+.about-header h2{
+
+font-size:2.6rem;
+
+}
+
+.profile-content h2{
+
+font-size:2.2rem;
+
+}
+
+}

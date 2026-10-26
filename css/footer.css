@@ -1,0 +1,960 @@
+/*==================================================
+FOOTER
+Luana Roza - Digital Experiences
+==================================================*/
+
+#footer{
+
+    position:relative;
+
+    width:100%;
+
+    padding:70px 8% 30px;
+
+    overflow:hidden;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #050816 0%,
+            #040612 100%
+        );
+
+    border-top:
+
+        1px solid
+        rgba(255,255,255,.07);
+
+}
+
+
+/*==================================================
+FOOTER GLOW
+==================================================*/
+
+#footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:250px;
+
+    top:-180px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(95,124,255,.12),
+            transparent 70%
+        );
+
+    filter:blur(60px);
+
+    pointer-events:none;
+
+}
+
+
+/*==================================================
+FOOTER CONTENT
+==================================================*/
+
+.footer-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:space-between;
+
+    gap:50px;
+
+}
+
+
+/*==================================================
+FOOTER BRAND
+==================================================*/
+
+.footer-brand{
+
+    max-width:420px;
+
+}
+
+
+.footer-brand h3{
+
+    margin-bottom:12px;
+
+    color:#FFFFFF;
+
+    font-family:
+
+        "Space Grotesk",
+        sans-serif;
+
+    font-size:1.5rem;
+
+    font-weight:600;
+
+}
+
+
+.footer-brand h3 span{
+
+    color:#71DFFF;
+
+}
+
+
+.footer-brand p{
+
+    color:#8497AC;
+
+    font-size:.85rem;
+
+    line-height:1.8;
+
+}
+
+
+/*==================================================
+FOOTER NAVIGATION
+==================================================*/
+
+.footer-nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:11px;
+
+}
+
+
+.footer-nav-title{
+
+    margin-bottom:5px;
+
+    color:#FFFFFF;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+.footer-nav a{
+
+    width:max-content;
+
+    color:#8295AA;
+
+    font-size:.82rem;
+
+    text-decoration:none;
+
+    transition:
+
+        color .3s ease,
+
+        transform .3s ease;
+
+}
+
+
+.footer-nav a:hover{
+
+    color:#71DFFF;
+
+    transform:translateX(4px);
+
+}
+
+
+/*==================================================
+FOOTER SOCIAL
+==================================================*/
+
+.footer-social{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:11px;
+
+}
+
+
+.footer-social-title{
+
+    margin-bottom:5px;
+
+    color:#FFFFFF;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+.footer-social a{
+
+    width:max-content;
+
+    color:#8295AA;
+
+    font-size:.82rem;
+
+    text-decoration:none;
+
+    transition:
+
+        color .3s ease,
+
+        transform .3s ease;
+
+}
+
+
+.footer-social a:hover{
+
+    color:#71DFFF;
+
+    transform:translateX(4px);
+
+}
+
+
+/*==================================================
+FOOTER DIVIDER
+==================================================*/
+
+.footer-divider{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:1200px;
+
+    height:1px;
+
+    margin:50px auto 25px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.10),
+            transparent
+        );
+
+}
+
+
+/*==================================================
+FOOTER BOTTOM
+==================================================*/
+
+.footer-bottom{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+
+.footer-bottom p{
+
+    color:#63768B;
+
+    font-size:.72rem;
+
+    line-height:1.6;
+
+}
+
+
+.footer-bottom span{
+
+    color:#71869D;
+
+}
+
+/*==================================================
+FOOTER BRAND LINK
+==================================================*/
+
+.footer-brand a{
+
+    display:inline-block;
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    transition:
+
+        color .3s ease,
+
+        transform .3s ease;
+
+}
+
+
+.footer-brand a:hover{
+
+    color:#71DFFF;
+
+}
+
+
+/*==================================================
+FOOTER SOCIAL LINKS
+==================================================*/
+
+.footer-social-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:18px;
+
+}
+
+
+.footer-social-links a{
+
+    width:38px;
+
+    height:38px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:
+
+        rgba(255,255,255,.035);
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.08);
+
+    color:#8EA1B6;
+
+    font-size:1rem;
+
+    text-decoration:none;
+
+    transition:
+
+        color .3s ease,
+
+        background .3s ease,
+
+        border-color .3s ease,
+
+        transform .3s ease,
+
+        box-shadow .3s ease;
+
+}
+
+
+.footer-social-links a:hover{
+
+    color:#71DFFF;
+
+    background:
+
+        rgba(95,215,255,.07);
+
+    border-color:
+
+        rgba(95,215,255,.22);
+
+    transform:
+
+        translateY(-4px);
+
+    box-shadow:
+
+        0 8px 22px
+        rgba(95,215,255,.10);
+
+}
+
+
+/*==================================================
+BACK TO TOP
+==================================================*/
+
+.footer-top{
+
+    position:relative;
+
+    width:46px;
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:14px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(123,140,255,.10),
+            rgba(95,215,255,.05)
+        );
+
+    border:
+
+        1px solid
+        rgba(95,215,255,.15);
+
+    color:#8EA1B6;
+
+    font-size:1.1rem;
+
+    font-weight:500;
+
+    text-decoration:none;
+
+    overflow:hidden;
+
+    transition:
+
+        color .3s ease,
+
+        background .3s ease,
+
+        border-color .3s ease,
+
+        transform .3s ease,
+
+        box-shadow .3s ease;
+
+}
+
+
+/*==================================================
+BACK TO TOP - GLOW
+==================================================*/
+
+.footer-top::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:80px;
+
+    height:80px;
+
+    top:50%;
+
+    left:50%;
+
+    transform:
+
+        translate(-50%, -50%);
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(95,215,255,.12),
+            transparent 70%
+        );
+
+    opacity:0;
+
+    transition:
+
+        opacity .3s ease;
+
+    pointer-events:none;
+
+}
+
+
+/*==================================================
+BACK TO TOP - ARROW
+==================================================*/
+
+.footer-top::after{
+
+    content:"↑";
+
+    position:relative;
+
+    z-index:2;
+
+    transition:
+
+        transform .3s ease;
+
+}
+
+
+/*==================================================
+BACK TO TOP - HOVER
+==================================================*/
+
+.footer-top:hover{
+
+    color:#FFFFFF;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(123,140,255,.22),
+            rgba(95,215,255,.14)
+        );
+
+    border-color:
+
+        rgba(95,215,255,.30);
+
+    transform:
+
+        translateY(-5px);
+
+    box-shadow:
+
+        0 12px 30px
+        rgba(95,124,255,.18),
+
+        0 0 25px
+        rgba(95,215,255,.08);
+
+}
+
+
+.footer-top:hover::before{
+
+    opacity:1;
+
+}
+
+
+.footer-top:hover::after{
+
+    transform:
+
+        translateY(-3px);
+
+}
+
+
+/*==================================================
+BACK TO TOP - ACTIVE
+==================================================*/
+
+.footer-top:active{
+
+    transform:
+
+        translateY(-1px);
+
+}
+
+
+/*==================================================
+FOOTER COPYRIGHT LINK
+==================================================*/
+
+.footer-bottom a{
+
+    color:#71869D;
+
+    text-decoration:none;
+
+    transition:
+
+        color .3s ease;
+
+}
+
+
+.footer-bottom a:hover{
+
+    color:#71DFFF;
+
+}
+
+
+/*==================================================
+FOOTER ACCENT
+==================================================*/
+
+.footer-accent{
+
+    display:inline-block;
+
+    width:5px;
+
+    height:5px;
+
+    margin:0 7px 2px;
+
+    border-radius:50%;
+
+    background:#5FD7FF;
+
+    box-shadow:
+
+        0 0 10px
+        rgba(95,215,255,.55);
+
+}
+
+/*==================================================
+FOOTER RESPONSIVE
+==================================================*/
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:900px){
+
+    #footer{
+
+        padding:65px 6% 28px;
+
+    }
+
+
+    .footer-content{
+
+        display:grid;
+
+        grid-template-columns:
+
+            1fr 1fr;
+
+        gap:45px;
+
+    }
+
+
+    .footer-brand{
+
+        max-width:100%;
+
+    }
+
+
+    .footer-social{
+
+        justify-self:end;
+
+    }
+
+
+    .footer-divider{
+
+        margin-top:45px;
+
+    }
+
+}
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:650px){
+
+    #footer{
+
+        padding:
+
+            60px 20px 25px;
+
+    }
+
+
+    .footer-content{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:35px;
+
+    }
+
+
+    .footer-brand{
+
+        max-width:100%;
+
+    }
+
+
+    .footer-brand h3{
+
+        font-size:1.35rem;
+
+    }
+
+
+    .footer-brand p{
+
+        max-width:430px;
+
+        font-size:.82rem;
+
+    }
+
+
+    .footer-nav{
+
+        gap:10px;
+
+    }
+
+
+    .footer-social{
+
+        gap:10px;
+
+    }
+
+
+    .footer-social-links{
+
+        margin-top:15px;
+
+    }
+
+
+    .footer-divider{
+
+        margin:
+
+            40px auto 22px;
+
+    }
+
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
+
+    }
+
+
+    .footer-top{
+
+        align-self:flex-end;
+
+    }
+
+}
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media(max-width:420px){
+
+    #footer{
+
+        padding:
+
+            50px 16px 22px;
+
+    }
+
+
+    .footer-content{
+
+        gap:30px;
+
+    }
+
+
+    .footer-brand h3{
+
+        font-size:1.25rem;
+
+    }
+
+
+    .footer-brand p{
+
+        font-size:.78rem;
+
+        line-height:1.75;
+
+    }
+
+
+    .footer-nav-title,
+    .footer-social-title{
+
+        font-size:.68rem;
+
+        letter-spacing:1.3px;
+
+    }
+
+
+    .footer-nav a,
+    .footer-social a{
+
+        font-size:.78rem;
+
+    }
+
+
+    .footer-social-links{
+
+        gap:8px;
+
+    }
+
+
+    .footer-social-links a{
+
+        width:36px;
+
+        height:36px;
+
+        border-radius:11px;
+
+        font-size:.92rem;
+
+    }
+
+
+    .footer-bottom{
+
+        gap:15px;
+
+    }
+
+
+    .footer-bottom p{
+
+        font-size:.68rem;
+
+    }
+
+
+    .footer-top{
+
+        width:40px;
+
+        height:40px;
+
+        border-radius:12px;
+
+    }
+
+}
+
+
+/*==================================================
+REDUCED MOTION
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+    .footer-brand a,
+    .footer-nav a,
+    .footer-social a,
+    .footer-social-links a,
+    .footer-top,
+    .footer-bottom a{
+
+        transition:none;
+
+    }
+
+}

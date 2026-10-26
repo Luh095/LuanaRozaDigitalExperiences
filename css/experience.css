@@ -1,0 +1,1071 @@
+/*==================================================
+EXPERIENCE
+Luana Roza - Digital Experiences
+==================================================*/
+
+#experience{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    padding:160px 8%;
+
+    overflow:hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(95,124,255,.09),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(95,215,255,.07),
+            transparent 38%
+        ),
+
+        #050816;
+
+}
+
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+#experience::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    left:-350px;
+
+    top:10%;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(95,124,255,.12),
+            transparent 70%
+        );
+
+    filter:blur(110px);
+
+    pointer-events:none;
+
+}
+
+
+#experience::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    right:-300px;
+
+    bottom:5%;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(95,215,255,.09),
+            transparent 70%
+        );
+
+    filter:blur(120px);
+
+    pointer-events:none;
+
+}
+
+
+/*==================================================
+EXPERIENCE HEADER
+==================================================*/
+
+.experience-header{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+
+    margin:0 auto 100px;
+
+    text-align:center;
+
+}
+
+
+/*==================================================
+TAG
+==================================================*/
+
+.experience-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    background:
+
+        rgba(255,255,255,.05);
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.09);
+
+    backdrop-filter:blur(15px);
+
+    color:#71DFFF;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+
+/*==================================================
+TITLE
+==================================================*/
+
+.experience-header h2{
+
+    margin-top:32px;
+
+    color:#FFFFFF;
+
+    font-family:
+
+        "Space Grotesk",
+        sans-serif;
+
+    font-size:
+
+        clamp(
+            2.7rem,
+            5vw,
+            4.5rem
+        );
+
+    font-weight:700;
+
+    line-height:1.08;
+
+    letter-spacing:-2px;
+
+}
+
+
+.experience-header h2 span{
+
+    display:block;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #7B8CFF,
+            #5FD7FF
+        );
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    color:transparent;
+
+}
+
+
+/*==================================================
+DESCRIPTION
+==================================================*/
+
+.experience-header p{
+
+    max-width:720px;
+
+    margin:30px auto 0;
+
+    color:#B7C5D8;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+}
+
+
+/*==================================================
+DECORATIVE LINE
+==================================================*/
+
+.experience-header::after{
+
+    content:"";
+
+    display:block;
+
+    width:110px;
+
+    height:2px;
+
+    margin:42px auto 0;
+
+    border-radius:30px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            #5F7CFF,
+            #5FD7FF,
+            transparent
+        );
+
+}
+
+
+/*==================================================
+TIMELINE
+==================================================*/
+
+.experience-timeline{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:20px 0;
+
+}
+
+
+/*==================================================
+CENTRAL LINE
+==================================================*/
+
+.experience-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    bottom:0;
+
+    left:50%;
+
+    width:1px;
+
+    transform:translateX(-50%);
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(95,124,255,.45),
+            rgba(95,215,255,.45),
+            transparent
+        );
+
+}
+
+
+/*==================================================
+EXPERIENCE ITEM
+==================================================*/
+
+.experience-item{
+
+    position:relative;
+
+    width:50%;
+
+    padding:0 55px 90px;
+
+}
+
+
+/* ESQUERDA */
+
+.experience-item:nth-child(odd){
+
+    left:0;
+
+    text-align:right;
+
+}
+
+
+/* DIREITA */
+
+.experience-item:nth-child(even){
+
+    left:50%;
+
+    text-align:left;
+
+}
+
+/*==================================================
+EXPERIENCE CARD
+==================================================*/
+
+.experience-card{
+
+    position:relative;
+
+    padding:30px 32px;
+
+    border-radius:24px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.065),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.09);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+
+        0 25px 60px
+        rgba(0,0,0,.22);
+
+    transition:
+
+        transform .4s ease,
+
+        border-color .4s ease,
+
+        box-shadow .4s ease;
+
+}
+
+
+/*==================================================
+CARD HOVER
+==================================================*/
+
+.experience-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:
+
+        rgba(95,215,255,.25);
+
+    box-shadow:
+
+        0 30px 70px
+        rgba(0,0,0,.35),
+
+        0 0 35px
+        rgba(95,215,255,.08);
+
+}
+
+
+/*==================================================
+TIMELINE DOT
+==================================================*/
+
+.experience-dot{
+
+    position:absolute;
+
+    top:32px;
+
+    width:17px;
+
+    height:17px;
+
+    border-radius:50%;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #7B8CFF,
+            #5FD7FF
+        );
+
+    border:
+
+        4px solid
+        #050816;
+
+    box-shadow:
+
+        0 0 0 1px
+        rgba(95,215,255,.35),
+
+        0 0 20px
+        rgba(95,215,255,.35);
+
+    z-index:5;
+
+}
+
+
+/* ESQUERDA */
+
+.experience-item:nth-child(odd)
+.experience-dot{
+
+    right:-8px;
+
+}
+
+
+/* DIREITA */
+
+.experience-item:nth-child(even)
+.experience-dot{
+
+    left:-8px;
+
+}
+
+
+/*==================================================
+PERIOD
+==================================================*/
+
+.experience-period{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:15px;
+
+    padding:7px 14px;
+
+    border-radius:30px;
+
+    background:
+
+        rgba(95,124,255,.09);
+
+    border:
+
+        1px solid
+        rgba(95,215,255,.14);
+
+    color:#71DFFF;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+/*==================================================
+TITLE
+==================================================*/
+
+.experience-card h3{
+
+    margin-bottom:8px;
+
+    color:#FFFFFF;
+
+    font-family:
+
+        "Space Grotesk",
+        sans-serif;
+
+    font-size:1.45rem;
+
+    font-weight:600;
+
+    line-height:1.3;
+
+}
+
+
+/*==================================================
+SUBTITLE
+==================================================*/
+
+.experience-card h4{
+
+    margin-bottom:18px;
+
+    color:#8FA8C0;
+
+    font-size:.9rem;
+
+    font-weight:500;
+
+}
+
+
+/*==================================================
+DESCRIPTION
+==================================================*/
+
+.experience-card p{
+
+    color:#B7C5D8;
+
+    font-size:.92rem;
+
+    line-height:1.8;
+
+}
+
+
+/*==================================================
+SKILLS
+==================================================*/
+
+.experience-skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-top:22px;
+
+}
+
+
+/*==================================================
+SKILL
+==================================================*/
+
+.experience-skills span{
+
+    padding:7px 12px;
+
+    border-radius:30px;
+
+    background:
+
+        rgba(255,255,255,.04);
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.08);
+
+    color:#C8D8E8;
+
+    font-size:.72rem;
+
+    transition:
+
+        background .3s ease,
+
+        border-color .3s ease,
+
+        color .3s ease;
+
+}
+
+
+.experience-card:hover
+.experience-skills span{
+
+    background:
+
+        rgba(95,124,255,.10);
+
+    border-color:
+
+        rgba(95,215,255,.18);
+
+    color:#FFFFFF;
+
+}
+
+
+/*==================================================
+CARD NUMBER
+==================================================*/
+
+.experience-number{
+
+    position:absolute;
+
+    top:20px;
+
+    right:24px;
+
+    color:
+
+        rgba(255,255,255,.16);
+
+    font-family:
+
+        "Space Grotesk",
+        sans-serif;
+
+    font-size:.75rem;
+
+    letter-spacing:2px;
+
+}
+
+
+/*==================================================
+CARD DECORATIVE LINE
+==================================================*/
+
+.experience-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:12%;
+
+    width:76%;
+
+    height:1px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(95,215,255,.45),
+            transparent
+        );
+
+    opacity:.5;
+
+}
+
+
+/*==================================================
+CARD GLOW
+==================================================*/
+
+.experience-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    right:-100px;
+
+    bottom:-100px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(95,215,255,.10),
+            transparent 70%
+        );
+
+    filter:blur(20px);
+
+    opacity:.5;
+
+    pointer-events:none;
+
+}
+
+/*==================================================
+EXPERIENCE REVEAL
+==================================================*/
+
+.experience-item{
+
+    opacity:0;
+
+    transform:translateY(45px);
+
+    transition:
+
+        opacity .7s ease,
+
+        transform .7s ease;
+
+}
+
+
+.experience-item.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*==================================================
+DOT ANIMATION
+==================================================*/
+
+.experience-item.show .experience-dot{
+
+    animation:
+        experiencePulse 2.5s ease-in-out infinite;
+
+}
+
+
+@keyframes experiencePulse{
+
+    0%,
+    100%{
+
+        box-shadow:
+
+            0 0 0 1px
+            rgba(95,215,255,.35),
+
+            0 0 18px
+            rgba(95,215,255,.25);
+
+    }
+
+    50%{
+
+        box-shadow:
+
+            0 0 0 1px
+            rgba(95,215,255,.55),
+
+            0 0 30px
+            rgba(95,215,255,.45);
+
+    }
+
+}
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:900px){
+
+    #experience{
+
+        padding:130px 6%;
+
+    }
+
+
+    .experience-header{
+
+        margin-bottom:75px;
+
+    }
+
+
+    .experience-timeline{
+
+        max-width:750px;
+
+    }
+
+
+    .experience-item{
+
+        padding-left:45px;
+
+        padding-right:45px;
+
+    }
+
+
+    .experience-card{
+
+        padding:27px 28px;
+
+    }
+
+}
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:700px){
+
+    #experience{
+
+        padding:110px 20px;
+
+    }
+
+
+    .experience-header{
+
+        margin-bottom:60px;
+
+    }
+
+
+    .experience-header h2{
+
+        font-size:2.5rem;
+
+        letter-spacing:-1px;
+
+    }
+
+
+    .experience-header p{
+
+        font-size:.95rem;
+
+        line-height:1.75;
+
+    }
+
+
+    /*----------------------------------------------
+    TIMELINE
+    ----------------------------------------------*/
+
+    .experience-timeline{
+
+        padding-left:30px;
+
+    }
+
+
+    .experience-timeline::before{
+
+        left:8px;
+
+        transform:none;
+
+    }
+
+
+    /*----------------------------------------------
+    ITEMS
+    ----------------------------------------------*/
+
+    .experience-item{
+
+        width:100%;
+
+        left:0 !important;
+
+        padding:
+
+            0 0 55px 35px;
+
+        text-align:left !important;
+
+    }
+
+
+    /*----------------------------------------------
+    DOT
+    ----------------------------------------------*/
+
+    .experience-item:nth-child(odd)
+    .experience-dot,
+
+    .experience-item:nth-child(even)
+    .experience-dot{
+
+        left:-1px;
+
+        right:auto;
+
+        top:30px;
+
+    }
+
+
+    /*----------------------------------------------
+    CARD
+    ----------------------------------------------*/
+
+    .experience-card{
+
+        width:100%;
+
+        padding:27px 24px;
+
+        border-radius:22px;
+
+    }
+
+
+    .experience-card h3{
+
+        font-size:1.3rem;
+
+    }
+
+
+    .experience-card p{
+
+        font-size:.9rem;
+
+        line-height:1.75;
+
+    }
+
+
+    .experience-number{
+
+        top:18px;
+
+        right:19px;
+
+    }
+
+
+    .experience-skills{
+
+        gap:7px;
+
+    }
+
+
+    .experience-skills span{
+
+        font-size:.68rem;
+
+        padding:6px 10px;
+
+    }
+
+}
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media(max-width:420px){
+
+    #experience{
+
+        padding-left:16px;
+
+        padding-right:16px;
+
+    }
+
+
+    .experience-header h2{
+
+        font-size:2.15rem;
+
+    }
+
+
+    .experience-header p{
+
+        font-size:.9rem;
+
+    }
+
+
+    .experience-timeline{
+
+        padding-left:25px;
+
+    }
+
+
+    .experience-item{
+
+        padding-left:30px;
+
+    }
+
+
+    .experience-card{
+
+        padding:
+
+            24px 20px;
+
+    }
+
+
+    .experience-period{
+
+        font-size:.68rem;
+
+        letter-spacing:1px;
+
+    }
+
+}

@@ -1,0 +1,112 @@
+/* ===========================================
+   RESET CSS
+   =========================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+body{
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    text-rendering:optimizeLegibility;
+
+
+     background:
+        radial-gradient(circle at top left,#6d4dff20,transparent 35%),
+        radial-gradient(circle at bottom right,#00c8ff15,transparent 35%),
+        linear-gradient(180deg,#050816,#080B18,#050816);
+
+    color:#fff;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+picture{
+
+    display:block;
+
+}
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font:inherit;
+
+}
+
+input,
+textarea{
+
+    border:none;
+
+    outline:none;
+
+    font:inherit;
+
+    resize:none;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+canvas{
+
+    display:block;
+
+}
+
+section{
+
+    position:relative;
+
+}
+
+::selection{
+
+    background:#7C5CFF;
+
+    color:#fff;
+
+}

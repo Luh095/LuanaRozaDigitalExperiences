@@ -1,0 +1,93 @@
+/*========================================*/
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#060816;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999999;
+
+    transition:1s;
+
+}
+
+.loader-content{
+
+    text-align:center;
+
+}
+
+.loader-content h1{
+
+    font-size:4rem;
+
+    letter-spacing:8px;
+
+}
+
+.loader-content p{
+
+    color:#57D7FF;
+
+    margin:15px 0 40px;
+
+}
+
+#loaderText{
+
+    display:block;
+
+    margin-bottom:25px;
+
+    color:#d5d5d5;
+
+}
+
+.progress{
+
+    width:420px;
+
+    height:8px;
+
+    background:#111;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.progress-bar{
+
+    width:0;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #7C5CFF,
+        #57D7FF
+    );
+
+}
+
+#loaderPercent{
+
+    display:block;
+
+    margin-top:20px;
+
+    font-size:1.2rem;
+
+}

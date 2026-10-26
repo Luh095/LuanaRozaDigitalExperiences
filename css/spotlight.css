@@ -1,0 +1,23 @@
+#spotlight{
+
+    position:fixed;
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+    rgba(124,92,255,.18),
+    transparent 70%);
+
+    filter:blur(80px);
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:-2;
+
+}

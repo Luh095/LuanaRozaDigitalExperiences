@@ -1,0 +1,58 @@
+:root{
+
+/* Cores */
+
+--background:#060816;
+
+--background-secondary:#0B1023;
+
+--surface:rgba(255,255,255,.05);
+
+--surface-light:rgba(255,255,255,.08);
+
+--border:rgba(255,255,255,.08);
+
+--primary:#7C5CFF;
+
+--secondary:#57D7FF;
+
+--text:#F8F9FB;
+
+--text-light:#C7CDD8;
+
+--gray:#8E95A7;
+
+
+/* Sombras */
+
+--shadow:0 25px 80px rgba(0,0,0,.35);
+
+--shadow-hover:0 40px 120px rgba(124,92,255,.18);
+
+
+/* Radius */
+
+--radius-small:12px;
+
+--radius:22px;
+
+--radius-large:34px;
+
+
+/* Blur */
+
+--blur:blur(20px);
+
+
+/* Tempo */
+
+--transition:.35s;
+
+
+/* Fontes */
+
+--title:'Space Grotesk',sans-serif;
+
+--textFont:'Inter',sans-serif;
+
+}
