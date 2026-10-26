@@ -1129,22 +1129,54 @@ AJUSTES DE CELULAR
     }
 
     /* A imagem do hero é um mockup com texto embutido.
-       Nesse tamanho o texto dentro dela fica ilegível e
-       repete o que o H1 ao lado já diz. */
+       Nesse tamanho o texto dentro dela ficaria ilegível e
+       repetiria o H1, então recortamos só os dispositivos:
+       proporção mais quadrada + ancoragem à esquerda. */
 
-    .hero-frame,
-    .image-glow{
+    .hero-frame{
 
-        display:none;
+        --frame-w:min(400px,86vw);
+
+        aspect-ratio:1/1;
+
+        border-radius:26px;
 
     }
 
-    /* Sem a imagem, os números fazem mais sentido depois
-       da apresentação do que antes dela */
+    .hero-frame img{
+
+        object-position:left center;
+
+    }
+
+    /* o <picture> precisa preencher o frame, senão o
+       height:100% do <img> não tem contra o que resolver */
+
+    .hero-frame picture{
+
+        display:block;
+
+        width:100%;
+
+        height:100%;
+
+    }
+
+    .image-glow{
+
+        width:calc(var(--frame-w) * 1.2);
+
+    }
+
+    /* A imagem vem DEPOIS do texto: assim o nome e os dois
+       botões cabem na primeira tela, e a imagem aparece
+       logo abaixo convidando a rolar. */
 
     .hero-right{
 
         order:0;
+
+        gap:22px;
 
     }
 
@@ -1209,6 +1241,165 @@ AJUSTES DE CELULAR
     .hero-left h1{
 
         font-size:2.6rem;
+
+    }
+
+}
+
+
+/*========================================================
+CELULAR NA HORIZONTAL
+Em paisagem sobra largura e falta altura, então o hero
+volta a duas colunas: texto à esquerda, imagem à direita.
+========================================================*/
+
+@media (max-width:1024px) and (max-height:560px) and (orientation:landscape){
+
+    #hero{
+
+        grid-template-columns:1.15fr .85fr;
+
+        align-items:center;
+
+        text-align:left;
+
+        min-height:auto;
+
+        padding:92px 5% 44px;
+
+        gap:30px;
+
+    }
+
+    .hero-left{
+
+        align-items:flex-start;
+
+    }
+
+    .hero-right{
+
+        order:0;
+
+        flex-direction:column;
+
+        gap:16px;
+
+    }
+
+    .hero-frame{
+
+        --frame-w:min(300px,38vw);
+
+        aspect-ratio:1/1;
+
+        border-radius:20px;
+
+    }
+
+    .hero-frame img{
+
+        object-position:left center;
+
+    }
+
+    .hero-frame picture{
+
+        display:block;
+
+        width:100%;
+
+        height:100%;
+
+    }
+
+    .image-glow{
+
+        width:calc(var(--frame-w) * 1.2);
+
+    }
+
+    .hero-left h1{
+
+        font-size:clamp(2rem,5.5vw,3rem);
+
+    }
+
+    .hero-left h2{
+
+        font-size:1.1rem;
+
+        min-height:2.4em;
+
+    }
+
+    .hero-description{
+
+        font-size:.92rem;
+
+        max-width:44ch;
+
+        line-height:1.55;
+
+    }
+
+    .hero-mini{
+
+        font-size:.78rem;
+
+    }
+
+    /* botões voltam a ficar lado a lado */
+
+    .hero-buttons{
+
+        flex-direction:row;
+
+        width:auto;
+
+    }
+
+    .hero-buttons a{
+
+        width:auto;
+
+    }
+
+    .socials{
+
+        justify-content:flex-start;
+
+    }
+
+    .hero-cards{
+
+        justify-content:center;
+
+        gap:8px;
+
+    }
+
+    .hero-card{
+
+        padding:8px 12px;
+
+    }
+
+    .hero-card span{
+
+        font-size:.95rem;
+
+    }
+
+    .hero-card p{
+
+        font-size:.75rem;
+
+    }
+
+    .scroll-indicator{
+
+        display:none;
 
     }
 
