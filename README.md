@@ -4,7 +4,7 @@ Portfólio profissional desenvolvido do zero, sem frameworks: HTML, CSS e
 JavaScript puros, com formulário de contato funcional e uma página de
 orçamento interativa.
 
-🔗 **[Ver o site](https://SEUDOMINIO.com.br)**
+🔗 **[Ver o site](https://luh095.github.io/Luana-Roza---Digital-Experiences/)**
 
 ![Preview do portfólio](assets/og-cover.png)
 
@@ -118,8 +118,8 @@ ficam centralizados em `css/variables.css` como custom properties.
 ## Rodando localmente
 
 ```bash
-git clone https://github.com/Luh095/NOME-DO-REPO.git
-cd NOME-DO-REPO
+git clone https://github.com/Luh095/Luana-Roza---Digital-Experiences.git
+cd Luana-Roza---Digital-Experiences
 ```
 
 Abrir o `index.html` direto no navegador já funciona. Para que o
