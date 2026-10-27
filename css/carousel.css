@@ -981,3 +981,109 @@ scale(.95);
     letter-spacing:.8px;
 
 }
+
+/*==================================================
+AJUSTES DE CELULAR — CARROSSEL
+==================================================*/
+
+@media(max-width:768px){
+
+    /* O respiro de 140px + 90px é escala de desktop:
+       no celular vira um vão vazio entre o texto e o card */
+
+    #carousel{
+
+        min-height:100dvh;
+
+        padding:88px 0;
+
+    }
+
+    .carousel-title{
+
+        margin-bottom:40px;
+
+    }
+
+    .carousel-title p{
+
+        max-width:34ch;
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+    /* CENTRALIZAÇÃO
+       A regra base usa margin-left:-190px, metade da
+       largura de desktop (380px). Com o card fluido no
+       celular essa conta nunca fecha. Trocamos por
+       left/right:0 + margem automática, que centra
+       qualquer largura. */
+
+    .carousel-card{
+
+        width:min(340px,88vw);
+
+        left:0;
+
+        right:0;
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+    /* SETAS
+       Antes ficavam nas laterais, por cima do card.
+       Agora descem para a linha dos indicadores. */
+
+    .carousel-button{
+
+        width:44px;
+
+        height:44px;
+
+        top:auto;
+
+        bottom:-78px;
+
+        font-size:1rem;
+
+    }
+
+    .prev{
+
+        left:14%;
+
+    }
+
+    .next{
+
+        right:14%;
+
+    }
+
+    /* espaço para as setas que desceram */
+
+    .carousel-indicators{
+
+        margin-top:46px;
+
+    }
+
+}
+
+
+/* Alvo de toque mínimo de 44px e foco visível */
+
+.carousel-button:focus-visible,
+.carousel-dot:focus-visible{
+
+    outline:2px solid var(--secondary);
+
+    outline-offset:4px;
+
+}
