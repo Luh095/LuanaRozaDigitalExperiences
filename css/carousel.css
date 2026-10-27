@@ -192,10 +192,6 @@ CARD
 
     height:450px;
 
-    margin-left:-190px;
-
-    margin-top:-225px;
-
     border-radius:30px;
 
     padding:45px;
@@ -661,11 +657,11 @@ GLOW - Card Ativo
 
 .carousel-card.active{
 
-    animation:floatCard 6s ease-in-out infinite;
+    animation:carouselFloat 6s ease-in-out infinite;
 
 }
 
-@keyframes floatCard{
+@keyframes carouselFloat{
 
     0%{
 
@@ -1026,14 +1022,6 @@ AJUSTES DE CELULAR — CARROSSEL
 
         width:min(340px,88vw);
 
-        left:0;
-
-        right:0;
-
-        margin-left:auto;
-
-        margin-right:auto;
-
     }
 
     /* SETAS
@@ -1085,5 +1073,90 @@ AJUSTES DE CELULAR — CARROSSEL
     outline:2px solid var(--secondary);
 
     outline-offset:4px;
+
+}
+
+
+/*==================================================
+ANIMAÇÃO DO CARROSSEL NO CELULAR
+No celular só um card aparece por vez, então o efeito
+Cover Flow 3D não é visto — ele só deixa a troca pesada
+e empurra o card para cima das setas. Aqui ele vira um
+deslize horizontal curto, que é o que se percebe como
+fluido numa tela pequena.
+==================================================*/
+
+@media(max-width:768px){
+
+    .carousel-card{
+
+        transition:
+            transform .45s cubic-bezier(.33,1,.68,1),
+            opacity .3s ease;
+
+        /* desfoque mais leve: 25px custa caro para animar
+           no celular e é o que causa engasgo na troca */
+
+        backdrop-filter:blur(14px);
+
+        -webkit-backdrop-filter:blur(14px);
+
+        will-change:transform,opacity;
+
+    }
+
+    /* A flutuação contínua sequestra o transform e corta
+       o deslize no meio do caminho. */
+
+    .carousel-card.active{
+
+        animation:none;
+
+        transform:translate(-50%,-50%);
+
+        opacity:1;
+
+    }
+
+    .carousel-card.left,
+    .carousel-card.far-left{
+
+        transform:translate(calc(-50% - 46px),-50%) scale(.94);
+
+        opacity:0;
+
+    }
+
+    .carousel-card.right,
+    .carousel-card.far-right{
+
+        transform:translate(calc(-50% + 46px),-50%) scale(.94);
+
+        opacity:0;
+
+    }
+
+    .carousel-card.hidden{
+
+        transform:translate(-50%,-50%) scale(.94);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* Sem movimento para quem pediu menos animação */
+
+@media (prefers-reduced-motion:reduce){
+
+    .carousel-card{
+
+        transition:opacity .2s ease;
+
+        animation:none !important;
+
+    }
 
 }
